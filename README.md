@@ -6,9 +6,14 @@ Test [JackPlowman/coding-metrics](https://github.com/JackPlowman/coding-metrics)
 
 - [Test Coding Metrics](#test-coding-metrics)
   - [Table of Contents](#table-of-contents)
+  - [coding-metrics Output](#coding-metrics-output)
   - [Contributing](#contributing)
 
-<!-- Add documentation -->
+## coding-metrics Output
+
+The current version of the coding-metrics action produces a SVG file similar to the one below.
+
+![coding-metrics Output](./output.svg)
 
 ## Contributing
 
