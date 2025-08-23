@@ -6,17 +6,14 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
-permissions:
-  contents: read
-  packages: read
-
-env:
-  FORCE_COLOR: 1
+permissions: {}
 
 jobs:
   coding-metrics:
     name: Coding Metrics
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Coding Metrics
         uses: JackPlowman/coding-metrics@373e7ab040e73a7131c43964d0e9a46b32239d8d
