@@ -1,0 +1,25 @@
+name: "Coding Metrics"
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: read
+  packages: read
+
+env:
+  FORCE_COLOR: 1
+
+jobs:
+  coding-metrics:
+    name: Coding Metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coding Metrics
+        uses: JackPlowman/coding-metrics@f8e1690e0517de742b2c5a161f9c18b863996ba0
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          debug: true
