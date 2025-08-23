@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Coding Metrics
-        uses: JackPlowman/coding-metrics@f8e1690e0517de742b2c5a161f9c18b863996ba0
+        uses: JackPlowman/coding-metrics@373e7ab040e73a7131c43964d0e9a46b32239d8d
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           debug: true
