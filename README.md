@@ -1,6 +1,6 @@
 # Test Coding Metrics
 
-Test JackPlowman/coding-metrics GitHub Action. This repository runs the coding metrics action  main branch unless a specific version is being tested.
+Test JackPlowman/coding-metrics GitHub Action. This repository runs the coding metrics action main branch unless a specific version is being tested.
 
 ## Table of Contents
 
