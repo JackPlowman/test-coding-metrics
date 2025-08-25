@@ -16,7 +16,7 @@ jobs:
       contents: write
     steps:
       - name: Coding Metrics
-        uses: JackPlowman/coding-metrics@1ef59c6d7096a23fb4d56036f37712dfb9ab2880
+        uses: JackPlowman/coding-metrics@b50b9bf11e61adbb4b7734161b2cbde094d33054
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           debug: true
