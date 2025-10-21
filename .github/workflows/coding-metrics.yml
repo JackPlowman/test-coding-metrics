@@ -16,7 +16,7 @@ jobs:
       contents: write # Allow the workflow to create and modify files in the repository
     steps:
       - name: Coding Metrics
-        uses: JackPlowman/coding-metrics@b50b9bf11e61adbb4b7734161b2cbde094d33054
+        uses: JackPlowman/coding-metrics@b50b9bf11e61adbb4b7734161b2cbde094d33054 # zizmor: ignore[stale-action-refs]
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           debug: true
