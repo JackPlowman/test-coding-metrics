@@ -13,7 +13,7 @@ Test [JackPlowman/coding-metrics](https://github.com/JackPlowman/coding-metrics)
 
 The current version of the coding-metrics action produces a SVG file similar to the one below.
 
-![coding-metrics Output](./output.svg)
+![JackPlowman/coding-metrics Output](./output.svg)
 
 ## Contributing
 
