@@ -17,7 +17,7 @@ jobs:
       contents: write # Allow the workflow to create and modify files in the repository
     steps:
       - name: Coding Metrics
-        uses: JackPlowman/coding-metrics@main
+        uses: JackPlowman/coding-metrics@copilot/fix-avatar-image-display
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           debug: true
