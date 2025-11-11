@@ -16,8 +16,31 @@ jobs:
     permissions:
       contents: write # Allow the workflow to create and modify files in the repository
     steps:
-      - name: Coding Metrics
+      - name: Coding Metrics (default)
         uses: JackPlowman/coding-metrics@main # zizmor: ignore[unpinned-uses]
         with:
           github_token: ${{ secrets.GH_TOKEN }}
+          output_file_name: default.svg
+          colour_profile: default
           debug: true
+      - name: Coding Metrics (dark)
+        uses: JackPlowman/coding-metrics@main # zizmor: ignore[unpinned-uses]
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          output_file_name: dark.svg
+          colour_profile: dark
+      - name: Coding Metrics (ocean)
+        uses: JackPlowman/coding-metrics@main # zizmor: ignore[unpinned-uses]
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          output_file_name: ocean.svg
+          colour_profile: ocean
+
+      - name: Coding Metrics (sunset)
+        uses: JackPlowman/coding-metrics@main # zizmor: ignore[unpinned-uses]
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          output_file_name: sunset.svg
+          colour_profile: sunset
+
+
