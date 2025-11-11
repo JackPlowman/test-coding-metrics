@@ -21,15 +21,15 @@ Test [JackPlowman/coding-metrics](https://github.com/JackPlowman/coding-metrics)
 
 #### Dark Theme
 
-![JackPlowman/coding-metrics Dark Theme Output](./dark-theme.svg)
+![JackPlowman/coding-metrics Dark Theme Output](./dark.svg)
 
 #### Ocean Theme
 
-![JackPlowman/coding-metrics Ocean Theme Output](./ocean-theme.svg)
+![JackPlowman/coding-metrics Ocean Theme Output](./ocean.svg)
 
 #### Sunset Theme
 
-![JackPlowman/coding-metrics Sunset Theme Output](./sunset-theme.svg)
+![JackPlowman/coding-metrics Sunset Theme Output](./sunset.svg)
 
 ## Contributing
 
