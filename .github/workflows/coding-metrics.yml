@@ -42,5 +42,3 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           output_file_name: sunset.svg
           colour_profile: sunset
-
-
