@@ -51,7 +51,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Check Markdown links
-        uses: UmbrellaDocs/action-linkspector@6c637d70424624231467a4ca918be54fa3b792d0 # v1.5.4
+        uses: UmbrellaDocs/action-linkspector@568ec8d29fa92b31fd9ea5381e155c51e922af83 # v1.5.5
         with:
           github_token: ${{ github.token }}
           config_file: .github/tool-configurations/.linkspector.yml
@@ -183,7 +183,7 @@ jobs:
           persist-credentials: false
       - name: Scan current project
         id: scan
-        uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7.4.0
+        uses: anchore/scan-action@27805bf3b4e84b4a5c980df22ed233c00390a439 # v7.4.2
         with:
           path: "."
         continue-on-error: true
@@ -192,7 +192,7 @@ jobs:
         with:
           sarif_file: ${{ steps.scan.outputs.sarif }}
       - name: Scan current project
-        uses: anchore/scan-action@e1165082ffb1fe366ebaf02d8526e7c4989ea9d2 # v7.4.0
+        uses: anchore/scan-action@27805bf3b4e84b4a5c980df22ed233c00390a439 # v7.4.2
         with:
           path: "."
 
@@ -301,7 +301,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Secret Scanning
-        uses: trufflesecurity/trufflehog@27b0417c16317ca9a472a9a8092acce143b49c55 # v3.95.9
+        uses: trufflesecurity/trufflehog@31ce31ee1abbcc7dc8eee5764c17121c3044c8b2 # v3.99.7
         with:
           extra_args: --results=verified,unknown
 
