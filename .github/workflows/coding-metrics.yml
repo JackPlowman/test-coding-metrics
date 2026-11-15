@@ -21,27 +21,27 @@ jobs:
       contents: write # Allow the workflow to create and modify files in the repository
     steps:
       - name: Coding Metrics (default)
-        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # main
+        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # zizmor: ignore[stale-action-refs] Upstream has no release tags.
         with:
           github_token: ${{ secrets.GH_TOKEN }} # zizmor: ignore[secrets-outside-env] The scheduled action test needs the PAT for authenticated-user metrics and commits.
           output_file_name: default.svg
           colour_profile: default
           debug: true
       - name: Coding Metrics (dark)
-        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # main
+        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # zizmor: ignore[stale-action-refs] Upstream has no release tags.
         with:
           github_token: ${{ secrets.GH_TOKEN }} # zizmor: ignore[secrets-outside-env] The scheduled action test needs the PAT for authenticated-user metrics and commits.
           output_file_name: dark.svg
           colour_profile: dark
       - name: Coding Metrics (ocean)
-        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # main
+        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # zizmor: ignore[stale-action-refs] Upstream has no release tags.
         with:
           github_token: ${{ secrets.GH_TOKEN }} # zizmor: ignore[secrets-outside-env] The scheduled action test needs the PAT for authenticated-user metrics and commits.
           output_file_name: ocean.svg
           colour_profile: ocean
 
       - name: Coding Metrics (sunset)
-        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # main
+        uses: JackPlowman/coding-metrics@c9fa9bb2169c251560fbaf18e16b83f155d7d530 # zizmor: ignore[stale-action-refs] Upstream has no release tags.
         with:
           github_token: ${{ secrets.GH_TOKEN }} # zizmor: ignore[secrets-outside-env] The scheduled action test needs the PAT for authenticated-user metrics and commits.
           output_file_name: sunset.svg
